@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   flex: 1 1 0%;
   gap: 0.5rem;
-  align-items: center;
+  justify-content: space-between;
   border-radius: 0.5rem;
   padding: 0.75rem;
   aspect-ratio: 1 / 1;
@@ -29,9 +29,9 @@ body {
   background-color: #2c2c2c;
 }
 
-.card > a {
+/* .card > a {
   height: 100%;
-}
+} */
 
 .card > a > img {
   height: 100%;
