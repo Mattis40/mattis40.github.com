@@ -29,15 +29,29 @@ body {
   background-color: #2c2c2c;
 }
 
-/* .card > a {
-  height: 100%;
-} */
-
 .card > a > img {
   height: 100%;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: scale-down;
+}
+
+.contact-card {
+  display: inline-flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  margin: 0.5em;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  border-radius: 2em;
+  transition: all 0.1s ease-in-out;
+}
+
+.contact-card:active {
+  transform: scale(0.95);
+  background-color: #2c2c2c;
 }
 
 .footer {
