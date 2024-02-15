@@ -7,14 +7,12 @@
   <title>Portfolio</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <script src='main.js'></script>
 </head>
 
-<body class="p-4">
+<body class="px-4 sm:px-20 md:px-40 lg:px-80">
   <div class="flex flex-col divide-y">
     <!-- Header section -->
-    <div class="h-auto pb-4">
+    <div class="h-auto py-4">
       <p class="text-4xl">Hey, I'm Mattis 👋</p>
       <p class="text-teal-600 text-4xl">FullStack Developer</p>
       <div class="grid grid-cols-6 gap-2 place-items-center pt-4">
@@ -38,21 +36,23 @@
         </div>
       </div>
     </div>
+
     <!-- Project section -->
     <div class="py-4">
-      <h1 class="text-xl font-medium">Projects</h1>
-      <div class="grid grid-cols-6 gap-2 place-items-center py-4">
-        <div class="card col-span-3 row-span-3">
+      <h1 class="text-xl font-medium text-center">Projects</h1>
+      <div class="grid grid-cols-6 gap-2 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
+        <div class="project-card col-span-3 row-span-3">
           <a href="https://github.com/ToxykAuBleu/Pixees" class="flex flex-col justify-between h-full">
             <div class="text-2xl font-bold">Pixees</div>
-            <div class="text-gray-300">A social media based on Pixel Art with an integrated editor</div>
+            <div class="text-gray-300 text-sm sm:text-xl">A social media based on Pixel Art with an integrated editor
+            </div>
             <div class="underline underline-offset-2 text-teal-600">Check on Github ></div>
           </a>
         </div>
-        <div class="card col-span-3 row-span-3">
+        <div class="project-card col-span-3 row-span-3">
           <a href="https://github.com/Mattis40/online-cv" class="flex flex-col justify-between h-full">
-            <div class="text-2xl font-bold">My Online CV</div>
-            <div class="text-gray-300">This is the website you're currently visiting!</div>
+            <div class="text-2xl font-bold">Website</div>
+            <div class="text-gray-300 text-sm sm:text-xl">This is the website you're currently visiting!</div>
             <div class="underline underline-offset-2 text-teal-600">Check on Github ></div>
           </a>
         </div>
@@ -61,139 +61,221 @@
 
     <!-- Technology section -->
     <div class="py-4">
-      <h1 class="text-xl font-medium">Technology</h1>
-      <div class="grid grid-cols-6 gap-2 place-items-center py-4">
-        <div class="card col-span-3 row-span-3 items-center">
-          <a href="https://angular.dev" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/angular.svg" alt="Angular">
-            <h2>Angular</h2>
-          </a>
+      <h1 class="text-xl font-medium text-center">Technology</h1>
+      <div class="grid grid-cols-6 sm:grid-cols-5 gap-2 sm:gap-2 md:gap-2 lg:gap-3 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
+        <div class="card col-span-3 sm:col-span-2 row-span-3 sm:row-span-2 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/angular.svg" alt="Angular">
+            </div>
+            <div class="card-back">
+              <h2>Angular</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-3 row-span-3 items-center">
-          <a href="https://laravel.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/laravel.svg" alt="Laravel">
-            <h2>Laravel</h2>
-          </a>
+        <div class="card col-span-3 sm:col-span-2 row-span-3 sm:row-span-2 sm:row-start-3 sm:col-start-4 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/laravel.svg" alt="Laravel">
+            </div>
+            <div class="card-back">
+              <h2>Laravel</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://typescriptlang.org" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/typescript.svg" alt="TypeScript">
-            <h2>TypeScript</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/typescript.svg" alt="TypeScript">
+            </div>
+            <div class="card-back">
+              <h2>TypeScript</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://sass-lang.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/sass.svg" alt="SASS">
-            <h2>SASS</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/sass.svg" alt="SASS">
+            </div>
+            <div class="card-back">
+              <h2>SASS</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://tailwindcss.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/tailwind.svg" alt="Tailwind">
-            <h2>Tailwind</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/tailwind.svg" alt="Tailwind">
+            </div>
+            <div class="card-back">
+              <h2>Tailwind</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://developer.mozilla.org/en/docs/Web/HTML" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/html.svg"alt="HTML5">
-            <h2>HTML5</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/html.svg" alt="HTML5">
+            </div>
+            <div class="card-back">
+              <h2>HTML5</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://developer.mozilla.org/en/docs/Web/CSS" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/css.svg" alt="CSS3">
-            <h2>CSS3</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/css.svg" alt="CSS3">
+            </div>
+            <div class="card-back">
+              <h2>CSS3</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://developer.mozilla.org/en/docs/Web/JavaScript" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/javascript.svg" alt="JavaScript">
-            <h2>JavaScript</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/javascript.svg" alt="JavaScript">
+            </div>
+            <div class="card-back">
+              <h2>JavaScript</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://php.net" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/php.svg" alt="PHP">
-            <h2>PHP</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/php.svg" alt="PHP">
+            </div>
+            <div class="card-back">
+              <h2>PHP</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://python.org" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/python.svg" alt="Python">
-            <h2>Python</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/python.svg" alt="Python">
+            </div>
+            <div class="card-back">
+              <h2>Python</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://isocpp.org" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/cpp.svg" alt="C++">
-            <h2>C++</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/cpp.svg" alt="C++">
+            </div>
+            <div class="card-back">
+              <h2>C++</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://www.mysql.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/mysql.svg" alt="MySQL">
-            <h2>MySQL</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/mysql.svg" alt="MySQL">
+            </div>
+            <div class="card-back">
+              <h2>MySQL</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a href="https://java.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/java.svg" alt="Java">
-            <h2>Java</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/java.svg" alt="Java" class="object-scale-down h-full">
+            </div>
+            <div class="card-back">
+              <h2>Java</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 row-span-2 items-center">
-          <a class="flex flex-col items-center gap-2">
-            <img src="../assets/technologies/c.svg" alt="C">
-            <h2>C</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 row-span-2 sm:row-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/technologies/c.svg" alt="C">
+            </div>
+            <div class="card-back">
+              <h2>C</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Software section -->
     <div class="py-4">
-      <h1 class="text-xl font-medium">Software</h1>
-      <div class="grid grid-cols-6 gap-2 place-items-center py-4">
-        <div class="card col-span-2 items-center">
-          <a href="https://code.visualstudio.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/vscode.svg" alt="VSCode">
-            <h2>VSCode</h2>
-          </a>
+      <h1 class="text-xl font-medium text-center">Software</h1>
+      <div class="grid grid-cols-6 gap-2 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/vscode.svg" alt="VSCode">
+            </div>
+            <div class="card-back ">
+              <h2 class="text-2xl">VSCode</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 items-center">
-          <a href="https://www.jetbrains.com/idea/" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/IntelliJ.svg" alt="IntelliJ">
-            <h2>IntelliJ</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/IntelliJ.svg" alt="IntelliJ">
+            </div>
+            <div class="card-back">
+              <h2 class="text-2xl">IntelliJ</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 items-center">
-          <a href="https://spyder-ide.org" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/spyder.svg" alt="Spyder">
-            <h2>Spyder</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/spyder.svg" alt="Spyder">
+            </div>
+            <div class="card-back">
+              <h2 class="text-2xl">Spyder</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 items-center">
-          <a href="https://phpmyadmin.net" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/PhpMyAdmin.svg" alt="phpMyAdmin">
-            <h2>phpMyAdmin</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/AndroidStudio.svg" alt="AndroidStudio">
+            </div>
+            <div class="card-back">
+              <h2 class="text-2xl">Android Studio</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 items-center">
-          <a href="https://figma.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/Figma.svg" alt="Figma">
-            <h2>Figma</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/Figma.svg" alt="Figma">
+            </div>
+            <div class="card-back">
+              <h2 class="text-2xl">Figma</h2>
+            </div>
+          </div>
         </div>
-        <div class="card col-span-2 items-center">
-          <a href="https://trello.com" class="flex flex-col items-center gap-2">
-            <img src="../assets/software/trello.svg" alt="Trello">
-            <h2>Trello</h2>
-          </a>
+        <div class="card col-span-2 sm:col-span-1 items-center">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../assets/software/trello.svg" alt="IntelliJ">
+            </div>
+            <div class="card-back">
+              <h2 class="text-2xl">Trello</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <h1 class="text-xl font-medium text-center py-4 ">Thanks for scrolling</h1>
+
+    <!-- Footer section -->
+    <div class="py-4">
+      <h1 class="text-xl font-medium text-center pb-4">Thanks for scrolling</h1>
       <div class="footer py-4">Made with ❤️ by ✋</div>
     </div>
   </div>
