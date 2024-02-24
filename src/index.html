@@ -14,7 +14,7 @@
     <!-- Header section -->
     <div class="h-auto py-4">
       <p class="text-4xl">Hey, I'm Mattis 👋</p>
-      <p class="text-teal-600 text-4xl">FullStack Developer</p>
+      <p class="text-teal-600 text-4xl">An Incoming FullStack Developer</p>
       <div class="grid grid-cols-6 gap-2 place-items-center pt-4">
         <div class="contact-card col-span-2">
           <a href="#" class="inline-flex flex-row items-center h-6 gap-2">
@@ -37,22 +37,81 @@
       </div>
     </div>
 
+    <!-- Timeline section -->
+    <div
+      class="py-4 space-y-4 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px
+      md:before:mx-auto md:before:translate-x-0 before:h-full before:py-10 before:w-0.5 before:bg-gradient-to-b before:from-transparent
+      before:via-slate-300 before:to-transparent">
+      <!-- Item #1 -->
+      <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+        <!-- Icon -->
+        <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white
+          group-[.is-active]:bg-teal-500 group-[.is-active]:text-emerald-50 shadow shrink-0
+          md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+        </div>
+        <!-- Card -->
+        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#242424] p-4 rounded-lg shadow">
+          <div class="flex items-center justify-between space-x-2 mb-1">
+            <div class="font-bold text-teal-500">Bachelor in Computer Science</div>
+            <time class="font-medium text-teal-600">2022-2025</time>
+          </div>
+          <div>IUT de Bayonne et du Pays Basque</div>
+          <div>Parcours A "Réalisation d'applications: conception, développement, validation"</div>
+          <ul>
+            <li class="list-inside list-disc">Projet Voltaire</li>
+            <li class="list-inside list-disc">TOEIC</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item #2 -->
+      <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+        <!-- Icon -->
+        <div
+          class="flex items-center justify-center w-10 h-10 rounded-full border border-white
+          bg-[slate-300] group-[.is-active]:bg-teal-500 group-[.is-active]:text-emerald-50 shadow shrink-0
+          md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+        </div>
+        <!-- Card -->
+        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#242424] p-4 rounded-lg shadow">
+          <div class="flex items-center justify-between space-x-2 mb-1">
+            <div class="font-bold text-teal-500">Baccalaureate
+            </div>
+            <time class="font-caveat font-medium text-teal-600">2019-2022</time>
+          </div>
+          <div>Cité scolaire Gaston Crampe</div>
+          <ul>
+            <li class="list-inside list-disc">Spécialités Maths et NSI</li>
+            <li class="list-inside list-disc">Section européenne Anglais</li>
+            <li class="list-inside list-disc">Maths expertes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <!-- Project section -->
     <div class="py-4">
       <h1 class="text-xl font-medium text-center">Projects</h1>
-      <div class="grid grid-cols-6 gap-2 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
-        <div class="project-card col-span-3 row-span-3">
+      <div class="grid grid-cols-4 gap-2 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
+        <div class="project-card col-span-2 row-span-2">
           <a href="https://github.com/ToxykAuBleu/Pixees" class="flex flex-col justify-between h-full">
-            <div class="text-2xl font-bold">Pixees</div>
+            <div class="text-2xl font-bold text-teal-500">Pixees</div>
             <div class="text-gray-300 text-sm sm:text-xl">A social media based on Pixel Art with an integrated editor
             </div>
             <div class="underline underline-offset-2 text-teal-600">Check on Github ></div>
           </a>
         </div>
-        <div class="project-card col-span-3 row-span-3">
+        <div class="project-card col-span-2 row-span-2">
           <a href="https://github.com/Mattis40/online-cv" class="flex flex-col justify-between h-full">
-            <div class="text-2xl font-bold">Website</div>
+            <div class="text-2xl font-bold text-teal-500">Website</div>
             <div class="text-gray-300 text-sm sm:text-xl">This is the website you're currently visiting!</div>
+            <div class="underline underline-offset-2 text-teal-600">Check on Github ></div>
+          </a>
+        </div>
+        <div class="project-card col-start-2 col-span-2 row-span-2">
+          <a href="https://github.com/Mattis40/online-cv" class="flex flex-col justify-between h-full">
+            <div class="text-2xl font-bold text-teal-500">PalEditor</div>
+            <div class="text-gray-300 text-sm sm:text-xl">A place to easily create and modify your .pal palette</div>
             <div class="underline underline-offset-2 text-teal-600">Check on Github ></div>
           </a>
         </div>
@@ -62,14 +121,15 @@
     <!-- Technology section -->
     <div class="py-4">
       <h1 class="text-xl font-medium text-center">Technology</h1>
-      <div class="grid grid-cols-6 sm:grid-cols-5 gap-2 sm:gap-2 md:gap-2 lg:gap-3 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
+      <div
+        class="grid grid-cols-6 sm:grid-cols-5 gap-2 sm:gap-2 md:gap-2 lg:gap-3 place-items-center py-4 sm:px-[5%] md:px-[7.5%] lg:px-[10%]">
         <div class="card col-span-3 sm:col-span-2 row-span-3 sm:row-span-2 items-center">
           <div class="card-inner">
             <div class="card-front">
               <img src="../assets/technologies/angular.svg" alt="Angular">
             </div>
             <div class="card-back">
-              <h2>Angular</h2>
+              <h2 class="text-3xl">Angular</h2>
             </div>
           </div>
         </div>
@@ -79,7 +139,7 @@
               <img src="../assets/technologies/laravel.svg" alt="Laravel">
             </div>
             <div class="card-back">
-              <h2>Laravel</h2>
+              <h2 class="text-3xl">Laravel</h2>
             </div>
           </div>
         </div>
@@ -89,7 +149,7 @@
               <img src="../assets/technologies/typescript.svg" alt="TypeScript">
             </div>
             <div class="card-back">
-              <h2>TypeScript</h2>
+              <h2 class="text-lg">TypeScript</h2>
             </div>
           </div>
         </div>
@@ -99,7 +159,7 @@
               <img src="../assets/technologies/sass.svg" alt="SASS">
             </div>
             <div class="card-back">
-              <h2>SASS</h2>
+              <h2 class="text-lg">SASS</h2>
             </div>
           </div>
         </div>
@@ -109,7 +169,7 @@
               <img src="../assets/technologies/tailwind.svg" alt="Tailwind">
             </div>
             <div class="card-back">
-              <h2>Tailwind</h2>
+              <h2 class="text-lg">Tailwind</h2>
             </div>
           </div>
         </div>
@@ -119,7 +179,7 @@
               <img src="../assets/technologies/html.svg" alt="HTML5">
             </div>
             <div class="card-back">
-              <h2>HTML5</h2>
+              <h2 class="text-lg">HTML5</h2>
             </div>
           </div>
         </div>
@@ -129,7 +189,7 @@
               <img src="../assets/technologies/css.svg" alt="CSS3">
             </div>
             <div class="card-back">
-              <h2>CSS3</h2>
+              <h2 class="text-lg">CSS3</h2>
             </div>
           </div>
         </div>
@@ -139,7 +199,7 @@
               <img src="../assets/technologies/javascript.svg" alt="JavaScript">
             </div>
             <div class="card-back">
-              <h2>JavaScript</h2>
+              <h2 class="text-lg">JavaScript</h2>
             </div>
           </div>
         </div>
@@ -149,7 +209,7 @@
               <img src="../assets/technologies/php.svg" alt="PHP">
             </div>
             <div class="card-back">
-              <h2>PHP</h2>
+              <h2 class="text-lg">PHP</h2>
             </div>
           </div>
         </div>
@@ -159,7 +219,7 @@
               <img src="../assets/technologies/python.svg" alt="Python">
             </div>
             <div class="card-back">
-              <h2>Python</h2>
+              <h2 class="text-lg">Python</h2>
             </div>
           </div>
         </div>
@@ -169,7 +229,7 @@
               <img src="../assets/technologies/cpp.svg" alt="C++">
             </div>
             <div class="card-back">
-              <h2>C++</h2>
+              <h2 class="text-lg">C++</h2>
             </div>
           </div>
         </div>
@@ -179,7 +239,7 @@
               <img src="../assets/technologies/mysql.svg" alt="MySQL">
             </div>
             <div class="card-back">
-              <h2>MySQL</h2>
+              <h2 class="text-lg">MySQL</h2>
             </div>
           </div>
         </div>
@@ -189,7 +249,7 @@
               <img src="../assets/technologies/java.svg" alt="Java" class="object-scale-down h-full">
             </div>
             <div class="card-back">
-              <h2>Java</h2>
+              <h2 class="text-lg">Java</h2>
             </div>
           </div>
         </div>
@@ -199,7 +259,7 @@
               <img src="../assets/technologies/c.svg" alt="C">
             </div>
             <div class="card-back">
-              <h2>C</h2>
+              <h2 class="text-lg">C</h2>
             </div>
           </div>
         </div>
@@ -216,7 +276,7 @@
               <img src="../assets/software/vscode.svg" alt="VSCode">
             </div>
             <div class="card-back ">
-              <h2 class="text-2xl">VSCode</h2>
+              <h2 class="text-lg">VSCode</h2>
             </div>
           </div>
         </div>
@@ -226,7 +286,7 @@
               <img src="../assets/software/IntelliJ.svg" alt="IntelliJ">
             </div>
             <div class="card-back">
-              <h2 class="text-2xl">IntelliJ</h2>
+              <h2 class="text-lg">IntelliJ</h2>
             </div>
           </div>
         </div>
@@ -236,7 +296,7 @@
               <img src="../assets/software/spyder.svg" alt="Spyder">
             </div>
             <div class="card-back">
-              <h2 class="text-2xl">Spyder</h2>
+              <h2 class="text-lg">Spyder</h2>
             </div>
           </div>
         </div>
@@ -246,7 +306,7 @@
               <img src="../assets/software/AndroidStudio.svg" alt="AndroidStudio">
             </div>
             <div class="card-back">
-              <h2 class="text-2xl">Android Studio</h2>
+              <h2 class="text-lg">Android Studio</h2>
             </div>
           </div>
         </div>
@@ -256,7 +316,7 @@
               <img src="../assets/software/Figma.svg" alt="Figma">
             </div>
             <div class="card-back">
-              <h2 class="text-2xl">Figma</h2>
+              <h2 class="text-lg">Figma</h2>
             </div>
           </div>
         </div>
@@ -266,7 +326,7 @@
               <img src="../assets/software/trello.svg" alt="IntelliJ">
             </div>
             <div class="card-back">
-              <h2 class="text-2xl">Trello</h2>
+              <h2 class="text-lg">Trello</h2>
             </div>
           </div>
         </div>
