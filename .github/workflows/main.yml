@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Change to your default branch if it's not 'main'
+      - master  # Make sure this matches your default branch
 
 jobs:
   build-and-deploy:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Use a compatible version of Node.js
+          node-version: 18
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -26,11 +26,11 @@ jobs:
 
       # Step 4: Build the project
       - name: Build project
-        run: npm run build  # Update if your build command is different
+        run: npm run build
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3  # Corrected to v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Change this to the output directory of your build process
+          publish_dir: ./dist
